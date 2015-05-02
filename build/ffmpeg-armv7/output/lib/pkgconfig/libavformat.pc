@@ -1,0 +1,14 @@
+prefix=/Users/hailonghan/ijkplayer/ios/ijkplayer-ios/ios/build/ffmpeg-armv7/output
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: libavformat
+Description: FFmpeg container format library
+Version: 56.15.102
+Requires: libavcodec >= 56.13.100, libavutil >= 54.15.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavformat -lm -lbz2 -lz -pthread
+Libs.private: 
+Cflags: -I${includedir}
